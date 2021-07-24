@@ -5,11 +5,11 @@ import reducer from './reducers';
 
 
 const createStoreWithMiddleware = applyMiddleware(
-    save({ states: ['credentials', 'movie', 'tipoDatos', 'getorders', 'trailer']})
+    save({ states: ['credentials']})
 )(createStore);
 const store = createStoreWithMiddleware(
     reducer,
-    load({ states: ['credentials', 'movie', 'tipoDatos', 'getorders', 'trailer']}),
+    load({ states: ['credentials']}),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({
         trace: true,
     })
