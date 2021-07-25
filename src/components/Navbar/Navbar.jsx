@@ -86,7 +86,7 @@ const Navbar = (props) => {
             <div className="Logout">
               <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} onClick={()=>logOut()} to="/"><FontAwesomeIcon icon={faSignOutAlt}/>Logout</NavLink>
             </div>
-            <div className="NavLink" activeClassName="selected">
+            <div className="NavLink">
               <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} to="/profile" ><div className="fotoUser"><img id="fotoNavBar" src={Avatar} onClick={() => cambiaDatos("profile")} alt="Profile" /></div>
               </NavLink>
             </div>

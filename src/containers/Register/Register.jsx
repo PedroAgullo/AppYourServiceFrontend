@@ -172,34 +172,34 @@ const Register = () => {
         <div className= "boxForm">
             <div className= "tituloFormRegistro"> FORMULARIO DE REGISTRO </div>
             <div className="formulario">
-                 <div class="form">
-                    <input type="text" id="name" class="form__input" name="name" autocomplete="off" placeholder=" " onBlur={()=>checkError("name")}  onChange={updateFormulario}></input>
-                    <label for="name" class="form__label">Nombre</label>
+                 <div className="form">
+                    <input type="text" id="name" className="form__input" name="name" autoComplete="off" placeholder=" " onBlur={()=>checkError("name")}  onChange={updateFormulario}></input>
+                    <label className="form__label">Nombre</label>
                 </div>
                 <div>{errors.eName}</div>
-                <div class="form">
-                    <input type="text" id="lastName1" class="form__input" name="lastName1" autocomplete="off" placeholder=" " onBlur={()=>checkError("lastName1")}  onChange={updateFormulario}></input>
-                    <label for="lastName1" class="form__label">Primer apellido</label>
+                <div className="form">
+                    <input type="text" id="lastName1" className="form__input" name="lastName1" autoComplete="off" placeholder=" " onBlur={()=>checkError("lastName1")}  onChange={updateFormulario}></input>
+                    <label className="form__label">Primer apellido</label>
                 </div>
                 <div>{errors.eLastName1}</div>
-                <div class="form">
-                    <input type="text" id="lastName2" class="form__input" name="lastName2" autocomplete="off" placeholder=" " onBlur={()=>checkError("lastName2")}  onChange={updateFormulario}></input>
-                    <label for="lastName2" class="form__label">Segundo apellido</label>
+                <div className="form">
+                    <input type="text" id="lastName2" className="form__input" name="lastName2" autoComplete="off" placeholder=" " onBlur={()=>checkError("lastName2")}  onChange={updateFormulario}></input>
+                    <label className="form__label">Segundo apellido</label>
                 </div>
                 <div>{errors.eLastName2}</div>
-                <div class="form">
-                        <input type="text" id="email" class="form__input" name="email" autocomplete="off" placeholder=" " onBlur={()=>checkError("email")}  onChange={updateFormulario}></input>
-                        <label for="email" class="form__label">Email</label>
+                <div className="form">
+                        <input type="text" id="email" className="form__input" name="email" autoComplete="off" placeholder=" " onBlur={()=>checkError("email")}  onChange={updateFormulario}></input>
+                        <label className="form__label">Email</label>
                     </div>
                 <div>{errors.eEmail}</div>                
-                    <div class="form">
-                        <input type="password" id="password" class="form__input" name="password" autocomplete="off" placeholder=" " onBlur={()=>checkError("password")} onChange={updateFormulario}></input>
-                        <label for="password" class="form__label">Password</label>
+                    <div className="form">
+                        <input type="password" id="password" className="form__input" name="password" autoComplete="off" placeholder=" " onBlur={()=>checkError("password")} onChange={updateFormulario}></input>
+                        <label className="form__label">Password</label>
                     </div>
                 <div>{errors.ePassword}</div>
-                <div class="form">
-                        <input type="date" id="birthday" class="form__input" name="birthday" autocomplete="off" placeholder=" " onBlur={()=>checkError("birthday")} onChange={updateFormulario}></input>
-                        <label for="birthday" class="form__label">Fecha de nacimiento</label>
+                <div className="form">
+                        <input type="date" id="birthday" className="form__input" name="birthday" autoComplete="off" placeholder=" " onBlur={()=>checkError("birthday")} onChange={updateFormulario}></input>
+                        <label className="form__label">Fecha de nacimiento</label>
                     </div>
                 <div>{errors.eBirthday}</div>
                                                  
