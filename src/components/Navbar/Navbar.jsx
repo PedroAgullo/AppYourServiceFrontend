@@ -14,9 +14,9 @@ const Navbar = (props) => {
 
   let history = useHistory();
 
-  const takeMe = (where) => {
-    history.push(where);
-  }
+  // const takeMe = (where) => {
+  //   history.push(where);
+  // }
 
   const logOut = () => {
 
@@ -62,7 +62,7 @@ const Navbar = (props) => {
           <div className="NavLink">
             <NavLink style={{ color: 'inherit', textDecoration: 'inherit'}} to="/register"><FontAwesomeIcon  icon={faAddressCard}/>Inscribirse</NavLink>
           </div>
-          <div className="NavLink" activeClassName="selected">
+          <div className="NavLink">
           <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} to="/login"><FontAwesomeIcon icon={faSignInAlt}/>Login</NavLink>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Navbar = (props) => {
               <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} onClick={()=>logOut()} to="/"><FontAwesomeIcon icon={faSignOutAlt}/>Logout</NavLink>
             </div>
             <div className="NavLink" activeClassName="selected">
-              <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} to="/profile" ><div className="fotoUser"><img id="fotoNavBar" src={Avatar} onClick={() => cambiaDatos("profile")} alt="Profile photo" /></div>
+              <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} to="/profile" ><div className="fotoUser"><img id="fotoNavBar" src={Avatar} onClick={() => cambiaDatos("profile")} alt="Profile" /></div>
               </NavLink>
             </div>
           </div>

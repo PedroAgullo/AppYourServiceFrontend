@@ -142,15 +142,12 @@ const Register = () => {
             city: datosUser.city,
             postalCode: datosUser.postalCode,
             dni: datosUser.dni,
-            phone: datosUser.phone,
-            subscription: datosUser.subscription,
-            lastSearch: 300,
-            lastPlay:90
+            phone: datosUser.phone
         }
 
 
        try{
-            await axios.post(("https://elseptimoartebackend.herokuapp.com/customer"), user);  
+            await axios.post(("http://localhost:3005/user"), user);  
         
             notification.success({message:'Usuario registrado.',description: "Te hemos enviado un email para activar la cuenta." });        
             history.push('/login');
